@@ -10,7 +10,8 @@ def make_negative(nums_list):
     return neg_list
 
 
-make_negative(nums)
+new_num = make_negative(nums)
+print(new_num)
 
 # Exercise 2
 
@@ -23,7 +24,8 @@ def filtered_address (address):
             list_of_numbers.append(str(n))
     return list_of_numbers
 
-filtered_address(address)
+test = filtered_address(address)
+print(test)
 
 
 # Exercise 3
