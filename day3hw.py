@@ -1,11 +1,4 @@
-#Given an array of positive integers nums, return a list of all of the negative integers.
-#Ex. 1
-#nums = [1, 3, 5, 7, 8]
-#Expected Output: [-1, -3, -5, -7, -8]
-
-#Ex. 2
-#nums = [100, 534, 32, 15, 77, 222, 788, 345, 75645, 22]
-#Expected Output: [-100, -534, -32, -15, -77, -222, -788, -345, -75645, -22]
+# Exercise 1
 
 nums = [100, 534, 32, 15, 77, 222, 788, 345, 75645, 22]
 
@@ -19,15 +12,29 @@ def make_negative(nums_list):
 
 make_negative(nums)
 
-
-#Given a string, return a list of all of the digits in the string.
-#Ex. 2
-address = "123 Real Street, Apt. 2, Springfield, OR 43498"
-#Expected Output: ['1', '2', '3', '2', '4', '3', '4', '9', '8']
-
-#Ex. 2
-#sentence = "My phone number is (555) 555-4321"
-#Expected Output: ['5', '5', '5', '5', '5', '5', '4', '3', '2', '1']
+# Exercise 2
 
 address = "123 Real Street, Apt. 2, Springfield, OR 43498"
 
+def filtered_address (address):
+    list_of_numbers = []
+    for n in address:
+        if n.isdigit():
+            list_of_numbers.append(str(n))
+    return list_of_numbers
+
+filtered_address(address)
+
+
+# Exercise 3
+
+digits = '123'
+
+def added_strings(digits):
+    value = int(digits) + 1 
+    return str(value) 
+
+x = added_strings(digits)
+print(x)
+
+print(type(x))
